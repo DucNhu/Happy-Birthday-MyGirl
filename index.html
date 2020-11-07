@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image"
+        content="https://scontent.fhan5-5.fna.fbcdn.net/v/t1.15752-9/123951667_5199394330086891_4114404231298721606_n.jpg?_nc_cat=101&ccb=2&_nc_sid=ae9488&_nc_ohc=DmNsPcipFPQAX9p72Ed&_nc_ht=scontent.fhan5-5.fna&oh=73126cc7e37ce9f170ea1bfd2f91ac45&oe=5FCCE52A" />
+        <meta property="og:title" content="Happy Birthday My Girl Friend" />
+        <meta property="og:description" content="Nguyễn Diễm Quỳnh &lt;3" />
+    <title>Document</title>
+    <!-- BS4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+</head>
+<body onload="typeWriter()">
+    <main class="wrapper">
+        <div class="position-fixed" id="text-slide"></div>
+        <!-- Slide code -->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade position-fixed" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item ">
+                    <img src="https://scontent-hkg4-2.xx.fbcdn.net/v/t1.15752-9/122379195_4845522842125335_7664712972754796087_n.jpg?_nc_cat=110&ccb=2&_nc_sid=ae9488&_nc_ohc=d1hufMRdXkoAX-ReSbQ&_nc_ht=scontent-hkg4-2.xx&oh=03a4ab37c81abd148175f413af329638&oe=5FCE2F56"
+                        alt="" class="rotate45">
+                    </div>
+                    <div class="carousel-item active">
+                    <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t1.15752-9/123924835_411047903615012_5551888192705148480_n.jpg?_nc_cat=108&ccb=2&_nc_sid=ae9488&_nc_ohc=QUzYpz0YpyAAX9rmVri&_nc_ht=scontent-hkg4-1.xx&oh=9cd0a8bdac835b0ddb6eaa23e9d63ed9&oe=5FCCE881"
+                        alt="">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t1.0-9/120329823_672950350025233_5285749539759565400_o.jpg?_nc_cat=105&ccb=2&_nc_sid=8bfeb9&_nc_ohc=SUEyObYtPhYAX-nmdO0&_nc_ht=scontent-hkg4-1.xx&oh=c036bf92284240e746e7cf4042b63a93&oe=5FCB8E3D"
+                        alt="" class="rotate95">
+                    </div>
+                </div>
+            </div>
+    </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+    <!-- Slide text -->
+<script>
+    var i = 0;
+    var txt = 'Happy Birthday';
+    var speed = 50;
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("text-slide").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+</script>
+</html>

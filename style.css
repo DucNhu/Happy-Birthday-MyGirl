@@ -40,6 +40,27 @@
     text-shadow: 1px 1px 20px rgb(107, 191, 221);
     font-family: 'Balsamiq Sans', cursive;
     font-weight: bold;
+
+    animation: text-shadow 3s infinite;
+}
+
+/* Amimation */
+@keyframes text-shadow {
+    0% {
+            text-shadow: 1px 1px 20px rgb(216, 236, 86);
+    }
+
+    30% {
+            text-shadow: 1px 1px 20px rgb(33, 228, 50);
+    }
+
+    60% {
+            text-shadow: 1px 1px 20px rgb(24, 189, 226);
+    }
+ 
+    100% {
+            text-shadow: 1px 1px 20px rgb(233, 137, 47);
+    }
 }
 
 
